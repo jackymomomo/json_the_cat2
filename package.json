@@ -18,5 +18,9 @@
   "homepage": "https://github.com/jackymomomo/json_the_cat2#readme",
   "dependencies": {
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
   }
 }

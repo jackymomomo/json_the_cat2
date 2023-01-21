@@ -1,8 +1,8 @@
 const request = require('request');
-const path = process.argv[2];
+// const path = process.argv[2];
 
 
-const catBreed = function(breed) {
+const fetchBreedDescription = function(breed) {
   const url = 'https://api.thecatapi.com/v1/breeds/search?q=' + breed;
   request(url, (error, res, body) => {
     if (error) {
@@ -17,5 +17,5 @@ const catBreed = function(breed) {
     }
   });
 };
-catBreed(path);
-module.exports = { catBreed };
+// fetchBreedDescription(path);
+module.exports = { fetchBreedDescription };
